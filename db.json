@@ -2,15 +2,15 @@
   "fruits": [
     {
       "id": 1,
-      "name": "Grapes",
-      "quantity": "50",
-      "price":"12"
+      "name": "Mango",
+      "quantity": 50,
+      "price": 320
     },
     {
       "id": 2,
-      "name": "Mango",
-      "quantity": "150",
-      "price":"45"
+      "name": "Apple",
+      "price": 120,
+      "quantity": 10
     }
   ]
 }

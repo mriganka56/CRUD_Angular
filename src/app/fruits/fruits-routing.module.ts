@@ -6,8 +6,12 @@ import { EditComponent } from './edit/edit.component';
 
 const routes: Routes = [
   {
-  path: 'fruits/home',
-  component: HomeComponent,
+    path: 'fruits/home',
+    component: HomeComponent
+  },
+  {
+    path: 'fruits/create',
+    component: CreateComponent
   },
   {
     path:'fruits/edit/:id',

@@ -1,15 +1,9 @@
 <div class="container">
   <div class="row mt-2">
     <div class="col col-md-4 offset-md-4">
-      <a class="btn btn-primary" routerLink="/fruits/create">Create</a>
+      <a class="btn btn-primary" routerLink="/fruits/create">Add Fruit</a>
     </div>
   </div>
-  <table class="table">
-	<!-- code hidden for display purpose -->
-  </table>
-</div>
-
-<div class="container">
     <table class="table">
       <thead>
         <tr>
@@ -25,34 +19,13 @@
           <td>{{ item.name }}</td>
           <td>{{ item.quantity }}</td>
           <td>{{ item.price }}</td>
-        </tr>
+          <td>
+            <a class="btn btn-primary" [routerLink]="['/fruits/edit', item.id]">Edit</a> | 
+            <button type="button" (click)="openDeleteModal(item.id)" class="btn btn-danger">Delete</button>  
+          </tr>
       </tbody>
     </table>
   </div>
-  
-  <!-- existing code hidden for display -->
-<tr *ngFor="let item of allFruits">
- 
-	<td>
-	  <a class="btn btn-primary" [routerLink]="['/fruits/edit', item.id]">Edit</a>
-	</td>
-</tr>
-
-<!-- existing code hidden for display purpose -->
-<div class="container">
-  
-  <table class="table">
-   
-    <tbody>
-      <tr *ngFor="let item of allFruits">
-        <td>
-          <a class="btn btn-primary" [routerLink]="['/fruits/edit', item.id]">Edit</a> |
-          <button type="button" (click)="openDeleteModal(item.id)" class="btn btn-danger">Delete</button>
-          </td>
-      </tr>
-    </tbody>
-  </table>
-</div>
  
  
 <!-- Modal -->
